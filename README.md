@@ -3,6 +3,8 @@ Repo of the publised paper: Pereira, R. H. M., Nadalin, V., Monasterio, L., & Al
 
 The repository brings the R Script used in the paper to calculate the **Urban Centrality Index (UCI)** proposed in the paper Pereira et al. (2013). This index measures the centrality of a defined area (city, metropolitan area, region, country etc) considering a continuum scale that varies from extreme monocentric to extreme polycentric.
 
+***Interpretation***: UCI values range from 0 to 1, where 0 expresses maximal polycentricity and 1 expresses maximal monocentricity.
+
 ## R Script
 In order to run the R script on your computer, one just have to make two small changes to the script. Here is what you need to do in three steps:
 * 1 - Change the working directory in Line 8. You should insert the folder in your computer where the shapefile is located
