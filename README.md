@@ -1,5 +1,5 @@
 ##General info:
-Repo of the publised paper: Pereira, R. H. M., Nadalin, V., Monasterio, L., & Albuquerque, P. H. M. (2013). Urban Centrality: A Simple Index. Geographical Analysis, 45(1), 77–89. doi:10.1111/gean.12002 [[link]](http://onlinelibrary.wiley.com/doi/10.1111/gean.12002/full)
+Repo of the publised paper: Pereira, R. H. M., Nadalin, V., Monasterio, L., & Albuquerque, P. H. M. (2013). [Urban Centrality: A Simple Index](http://onlinelibrary.wiley.com/doi/10.1111/gean.12002/full). Geographical Analysis, 45(1), 77–89. doi:10.1111/gean.12002
 
 The repository brings the R Script used in the paper to calculate the **Urban Centrality Index (UCI)** proposed in the paper Pereira et al. (2013). This index measures the centrality of a defined area (city, metropolitan area, region, country etc) considering a continuum scale that varies from extreme monocentric to extreme polycentric.
 
