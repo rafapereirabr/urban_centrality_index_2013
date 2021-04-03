@@ -115,18 +115,12 @@ sf_object <- suppressWarnings(sf::st_transform(sf_object, 3857))
 
 
 
-### load grid data
-# read locally
-df <- list.files('//storage1/geobr/data_gpkg/statistical_grid/2010',full.names = T)[1] %>%
-  pbapply::pblapply(., FUN = st_read)  %>%
-  rbindlist()  %>%
-  st_sf()
+### Example
 
+# load data
+data_path <- system.file("gpkg", package = "sf")
+df <- st_read(file.path(data_path, "nc.gpkg"))
 
-df2 <- df[1:25,]
-plot(df2)
+# calculate the mono/poly centrality of the spatial distribution of BIR74
+uci(sf_object = df, var_name = 'BIR74')
 
-
-uci(sf_object = df2, var_name = 'POP')
-
-uci(sf_object = df, var_name = 'POP')
