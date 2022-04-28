@@ -47,6 +47,7 @@ sf_object <- suppressWarnings(sf::st_transform(sf_object, 3857))
 ### calculate distance matrix
   coords <- suppressWarnings(st_coordinates( st_centroid(sf_object) ))
   distance <- fields::rdist(coords)
+  # distance <- parallelDist::parDist(coords, method = "euclidean")
   # distance <- as.matrix(distance)
   plot(coords)
 
