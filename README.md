@@ -5,12 +5,12 @@ The repository brings the R Script used in the paper to calculate the **Urban Ce
 
 ***Interpretation***: UCI values range from 0 to 1, where 0 expresses maximal polycentricity and 1 expresses maximal monocentricity.
 
-## R Script
-In order to run the R script on your computer, one just have to make two small changes to the script. Here is what you need to do in three steps:
-* 1 - Change the working directory in Line 8. You should insert the folder in your computer where the shapefile is located
-`setwd("C:/Users/yourcomputer/folderwithshapefile") # working directory`
-* 2 - Run the code from line 22 to 141
-* 3 - In the line number 147 `uci(GRIDCODE)`, replace the word GRIDCODE with the name of the variable in the shapefile you want to analyze, such as population, employment etc. This has to match the word in the shapefile data and it's case sensitive. After making this chage, run this line of the code.
+## R code
+The R scripts in this repo were used to write the paper.
+However, if you would like to calculate UCI, we strongly recommend you use the new [uci R package](https://github.com/ipeaGIT/uci).
+
+## Python code
+The Python scroipt `uci.py` was written by Felix Wagnet. Thanks, Felix!
 
 
 ### Current stage and further developments:
